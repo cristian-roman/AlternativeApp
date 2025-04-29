@@ -1,0 +1,17 @@
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\bin\Debug\netstandard2.0\Alternative.deps.json
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\bin\Debug\netstandard2.0\Alternative.dll
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\bin\Debug\netstandard2.0\ref\Alternative.dll
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\bin\Debug\netstandard2.0\Alternative.pdb
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.csproj.AssemblyReference.cache
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.AssemblyInfoInputs.cache
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.AssemblyInfo.cs
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.dll
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\ref\Alternative.dll
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\Alternative.pdb
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\View\AuthenticationUI.xaml.g.cs
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\View\RegistrationUI.xaml.g.cs
+C:\Users\Cristian\source\repos\Alternative\Alternative\Alternative\obj\Debug\netstandard2.0\View\DiscussionsUI.xaml.g.cs

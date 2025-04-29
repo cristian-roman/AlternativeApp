@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alternative.View.AuthenticationUI"
+             Title="Authentication"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="OrGray">#999999</Color>
+            <Style x:Key="PageTitleLabel" TargetType="Label">
+                <Setter Property="Text" Value="Alternative"/>
+                <Setter Property="TextColor" Value="{StaticResource AquaBlue}"/>
+                <Setter Property="FontSize" Value="55"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryField" TargetType="Entry">
+            </Style>
+            <Style x:Key="LogInButton" TargetType="Button">
+                <Setter Property="Text" Value="Log in"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                
+                <Setter Property="BackgroundColor" Value="{StaticResource AquaBlue}"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="5, 0"/>
+            </Style>
+            <Style x:Key="RegisterButton" TargetType="Button">
+                <Setter Property="Text" Value="Register"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+
+                <Setter Property="BackgroundColor" Value="{StaticResource AquaBlue}"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="40, 20"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="35"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <Label Style="{StaticResource PageTitleLabel}" HorizontalOptions="Center"/>
+                <Entry Text="{Binding UsernameField}" Style="{StaticResource EntryField}" Placeholder="Type the username or email" HorizontalOptions="FillAndExpand"/>
+                <Entry Text="{Binding PasswordField}" Style="{StaticResource EntryField}" Placeholder="Type the password" HorizontalOptions="FillAndExpand" IsPassword="True"/>
+                <Button Style="{StaticResource LogInButton}" Command="{Binding LogInCommand}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="End">
+                <Label BackgroundColor="{StaticResource OrGray}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1"/>
+                <Label Text="OR" TextColor="{StaticResource OrGray}" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,0"/>
+                <Label BackgroundColor="{StaticResource OrGray}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1"/>
+            </StackLayout>
+            
+            <Button Grid.Row="3" Grid.Column="1"
+                Style="{StaticResource RegisterButton}" Command="{Binding LoadRegistrationPageCommand}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alternative.View.RegistrationUI"
+             Title="RegistrationUI"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="OrGray">#999999</Color>
+            <Style x:Key="PageTitleLabel" TargetType="Label">
+                <Setter Property="Text" Value="Create an account"/>
+                <Setter Property="TextColor" Value="{StaticResource AquaBlue}"/>
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryField" TargetType="Entry">
+                <Setter Property="FontSize" Value="15"/>
+            </Style>
+            <Style x:Key="RegisterButton" TargetType="Button">
+                <Setter Property="Text" Value="Register"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+
+                <Setter Property="BackgroundColor" Value="{StaticResource AquaBlue}"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid Padding="10,0,10,0" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Style="{StaticResource PageTitleLabel}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Entry Text="{Binding Username}" Style="{StaticResource EntryField}" Placeholder="Username" Grid.Row="3" Grid.Column="0"/>
+            <Entry Text ="{Binding Email}" Style="{StaticResource EntryField}" Placeholder="Email" Grid.Row="4" Grid.Column="0"/>
+            <Entry Text ="{Binding Password}" Style="{StaticResource EntryField}" Placeholder="Password" Grid.Row="5" Grid.Column="0" IsPassword="True"/>
+            <Entry Text ="{Binding RepeatedPassword}" Style="{StaticResource EntryField}" Placeholder="Repeat password" Grid.Row="6" Grid.Column="0" IsPassword="True"/>
+            <Label BackgroundColor="{StaticResource OrGray}" Grid.Row="2" Grid.RowSpan="6" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="End" WidthRequest="1"/>
+
+            <Button Command="{Binding RegisterCommand}" Style="{StaticResource RegisterButton}" Grid.Row="3" Grid.RowSpan="4" Grid.Column="1" VerticalOptions="Center"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
