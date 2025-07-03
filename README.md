@@ -28,7 +28,3 @@ A cross-platform mobile app developed in C# targeting .NETStandard2.0, designed 
 1. Open solution in Visual Studio (with Xamarin/.NET MAUI support)
 2. Build the project
 3. Run on emulator or device
-
-## License
-
-MIT
